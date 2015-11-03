@@ -46,10 +46,15 @@ public class GildedRose
 		updatedItem.setQuality(0);
 	}
 	
-	if(nameOfUpdatedItem == "Aged Brie"){
+	
+	switch(nameOfUpdatedItem) {
+	
+	case "Aged Brie":
 		updatedItem.setQuality(qualityOfUpdatedItem+1);
+	break;
+	
+	
 	}
-
 		
 	
 	}
