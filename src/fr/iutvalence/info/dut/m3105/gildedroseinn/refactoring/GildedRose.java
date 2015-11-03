@@ -1,4 +1,4 @@
-package fr.iutvalence.info.dut.m3105.gildedroseinn.refactoring;
+	package fr.iutvalence.info.dut.m3105.gildedroseinn.refactoring;
 
 import java.util.List;
 
@@ -24,7 +24,8 @@ public class GildedRose
 	}
 
 	public static void updateItem(Item item)
-	{	
+	{
+		
 	}
 
 }
