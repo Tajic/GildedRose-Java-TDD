@@ -16,5 +16,13 @@ public class GildedRoseTest
 	}
 	
 	@Test
+	public void UptateItemInFunctionOfSellinTest()
+	{
+		Item item_test = new Item("Aged Brie", 0, 5);
+		GildedRose.updateItem(item_test);
+		assertEquals(item_test.getSellIn(), -1);
+		assertEquals(item_test.getQuality(), 3);
+	}
+	
 
 }
