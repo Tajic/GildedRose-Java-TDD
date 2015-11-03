@@ -25,7 +25,8 @@ public class GildedRose
 
 	public static void updateItem(Item updatedItem)
 	{
-		
+	
+	String nameOfUpdatedItem = updatedItem.getName();
 	int qualityOfUpdatedItem = updatedItem.getQuality();
 	int sellInOfUpdatedItem = updatedItem.getSellIn();
 	
@@ -40,8 +41,15 @@ public class GildedRose
 		updatedItem.setQuality(qualityOfUpdatedItem-1);
 	} 
 	
-	if(qualityOfUpdatedItem < 0) 
+	if(qualityOfUpdatedItem < 0)
+	{
 		updatedItem.setQuality(0);
+	}
+	
+	if(nameOfUpdatedItem == "Aged Brie"){
+		updatedItem.setQuality(qualityOfUpdatedItem+1);
+	}
+
 		
 	
 	}
