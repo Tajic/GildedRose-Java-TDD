@@ -33,4 +33,13 @@ public class GildedRoseTest
 		assertEquals(item_test.getQuality(), 0);		
 	}
 
+	@Test
+	public void UptateAgedBrieTest()
+	{
+		Item item_test = new Item("Aged Brie", 2, 0);
+		GildedRose.updateItem(item_test);
+		assertEquals(item_test.getSellIn(), 1);
+		assertEquals(item_test.getQuality(), 0);		
+	}
+
 }
