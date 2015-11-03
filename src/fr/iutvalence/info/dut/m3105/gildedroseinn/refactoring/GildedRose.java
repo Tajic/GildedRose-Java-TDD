@@ -23,10 +23,10 @@ public class GildedRose
 			updateItem(items.get(indexInItemList));
 	}
 
-	public static void updateItem(Item item)
+	public static void updateItem(Item updatedItem)
 	{
-	 item.setSellIn(item.getSellIn()-1);
-	 item.setQuality(item.getQuality()-1);
+	 updatedItem.setSellIn(updatedItem.getSellIn()-1);
+	 updatedItem.setQuality(updatedItem.getQuality()-1);
 	 
 	}
 

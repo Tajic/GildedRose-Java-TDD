@@ -14,5 +14,7 @@ public class GildedRoseTest
 		assertEquals(item_test.getSellIn(), 1);
 		assertEquals(item_test.getQuality(), 4);
 	}
+	
+	@Test
 
 }
