@@ -25,18 +25,22 @@ public class GildedRose
 
 	public static void updateItem(Item updatedItem)
 	{
-	if(updatedItem.getSellIn() <0) 
+		
+	int qualityOfUpdatedItem = updatedItem.getQuality();
+	int sellInOfUpdatedItem = updatedItem.getSellIn();
+	
+	if(sellInOfUpdatedItem < 0) 
 	{
-		 updatedItem.setSellIn(updatedItem.getSellIn()-1);
-		 updatedItem.setQuality(updatedItem.getQuality()-2); 
+		 updatedItem.setSellIn(sellInOfUpdatedItem-1);
+		 updatedItem.setQuality(qualityOfUpdatedItem-2); 
 	}
 	else 
 	{
-		updatedItem.setSellIn(updatedItem.getSellIn()-1);
-		updatedItem.setQuality(updatedItem.getQuality()-1);
+		updatedItem.setSellIn(sellInOfUpdatedItem-1);
+		updatedItem.setQuality(qualityOfUpdatedItem-1);
 	} 
 	
-	if(updatedItem.getQuality() < 0) 
+	if(qualityOfUpdatedItem < 0) 
 		updatedItem.setQuality(0);
 		
 	
